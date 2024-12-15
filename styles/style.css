@@ -1,0 +1,208 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#home {
+    padding-top: 80px;
+}
+
+/* Full Section */
+.section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #0f5e61;
+    padding: 1rem 2rem;
+}
+
+.navbar a {
+    color: white;
+    font-weight: 600;
+    margin-left: 1.5rem;
+}
+
+/* Content Container */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.profile-img img {
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.info-box {
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.info-box h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.info-box p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.btn-resume {
+    background-color: #42c2ca;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-resume:hover {
+    background-color: #369ea7;
+    color: white;
+}
+
+/* Section-Specific Styles */
+.section:nth-child(odd) {
+    background-color: #126c70; /* Alternating background colors */
+}
+
+.section:nth-child(even) {
+    background-color: #0d4f52;
+}
+
+/* Fix for Home Section */
+#home {
+    padding-top: 80px; /* Adjust based on your navbar height */
+}
+
+/* About Section Styling */
+#about {
+    background-color: #126c70; /* Background color */
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#about .content-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Adjust column proportions */
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about-text {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    background-color: #0d4f52; /* Contrasting background */
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    min-width: 350px; /* Minimum width to accommodate longer URLs */
+    max-width: 100%;
+}
+
+.contact-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    word-break: break-word;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-info a img {
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+.contact-info a:hover {
+    color: #42c2ca;
+}
+
+@media (max-width: 768px) {
+    #about .content-container {
+        grid-template-columns: 1fr; /* Single-column layout for smaller screens */
+    }
+
+    .about-text, .contact-info {
+        text-align: center;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .section {
+        padding: 2rem 1rem;
+    }
+}
